@@ -373,8 +373,13 @@
             }else if ($("#email").val() == ""){
                                 swal({
                 icon: "error",
-                text:"Please provide a valid email"
-                })        
+                text:"Please provide a email address"
+                })  
+            }else if ($("#email").val().includes('@') === false){
+                                swal({
+                icon: "error",
+                text:"Please provide a valid email address"
+                })      
             } else if ($("#phone").val() == "" ){
                 swal({
                 icon: "error",
